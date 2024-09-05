@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Fraction {
 
-    public int numerator, denominator;
+    private int numerator, denominator;
     private Scanner scanner = new Scanner(System.in);
 
     public Fraction(int numerator, int denominator) {
@@ -14,6 +14,14 @@ public class Fraction {
 
     public Fraction() {
 
+    }
+
+    public int getNumerator() {
+        return numerator;
+    }
+
+    public int getDenominator() {
+        return denominator;
     }
 
     public void readFraction() {
